@@ -1,0 +1,112 @@
+@font-face {
+     font-family:'lumanosimo';
+     src: url(../font/Lumanosimo/Lumanosimo-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: 'monoton';
+     src: url(../font/Monoton/Monoton-Regular.ttf);
+ }
+ 
+:root{
+     --vert:#1b3d20de;
+     --blanc:#e0ddddc9;
+}
+
+::selection{
+     background: var(--vert);
+     color: #fff;
+}
+
+*{
+     margin: 0; padding: 0;
+     outline: none; 
+     text-decoration: none;
+     box-sizing: border-box;
+     border: none;
+     list-style: none;
+     font-family: sans-serif;
+     transition: all .3s linear;
+}
+
+html{
+     font-size: 62.5%;
+}
+
+body{
+     /* background: url(../img/black.jpeg) no-repeat;
+     background-size: cover; */
+     background: #111;
+} 
+
+.head{
+     display: flex;
+     position: fixed;
+     width: 100%;
+     background: #27262650;
+     justify-content: space-between;
+     padding: 3.4rem;
+     align-items: center;
+     /* z-index: 999; */
+}
+
+.head .logo{
+     display: flex;
+     flex-wrap: wrap;
+     color: var(--blanc);
+     align-items: center;
+     font-size: 3rem;
+}
+
+.head .logo i{
+     color: var(--vert);
+}
+
+.head .logo h3{
+     font-family: 'monoton';
+     margin-left: .9rem;
+}
+
+.head .navbar ul{
+     display: flex;
+     flex-wrap: wrap;
+     font-size: 2.4rem;
+     gap: .4rem;
+}
+
+.head .navbar li a{
+     color: var(--blanc);
+     font-family:sans-serif;
+     margin-right: 2rem;
+     /* font-weight: bolder; */
+}
+
+.head .navbar li a:hover{
+     color: var(--vert);
+}
+
+.head .populaire{
+     display: flex;
+     gap: 1.3rem;
+     font-size: 3rem;
+}
+
+.head .populaire a:nth-child(1){
+     color: var(--vert)  ;
+}
+
+.head .populaire a:nth-child(2){
+     color: var(--blanc);
+}
+
+.head .populaire a:nth-child(1):hover{
+     color: var(--blanc);
+}
+
+.head .populaire a:nth-child(2):hover{
+     color: var(--vert);
+}
+
+
+
+
