@@ -43,7 +43,7 @@ body{
      background-size: cover; */
      background: #161515;
      /* width: 100vw;     */
-     height: 100vh;
+     /* height: 100vh; */
 } 
 
 .head{
@@ -117,6 +117,7 @@ body{
      padding-top: 5rem;
      /* padding: 26rem 5rem; */
      font-size: 2.4rem;
+     z-index: 2;
      color: var(--blanc);
 }
 
@@ -196,9 +197,52 @@ body{
 
 .galleries .container{
      display: flex;
+     /* position: relative; */
      flex-wrap: wrap;
      gap: 3.6rem;
      justify-content: center;
+}
+
+.galleries .container .item{
+     position: relative;
+}
+
+.galleries .container .item img{
+     border-radius: .5rem;
+     border: 3px solid var(--vert);
+}
+
+.galleries .container .item .descri{
+     position: absolute;
+     top: 100%;
+     background: #1312129c;
+     backdrop-filter: blur(8px);
+     width: 300px;
+     height: 300px;
+     text-align: center;
+     justify-content: center;
+     color: var(--blanc);
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     padding: 1%;
+     /* z-index: -1; */
+}
+
+
+
+.galleries .container .item:hover .descri{
+     top: 0;
+     /* z-index: 1; */
+}
+
+
+.galleries .container .item .descri h3{
+     font-size: 2.1rem;
+}
+
+.galleries .container .item .descri p{
+     font-size: 1.8rem;
 }
 
 .galleries .container .item:hover{
