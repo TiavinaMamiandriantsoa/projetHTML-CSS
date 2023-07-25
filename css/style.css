@@ -42,7 +42,7 @@ body{
      /* background: url(../img/black.jpeg) no-repeat;
      background-size: cover; */
      background: #161515;
-     width: 100vw;
+     /* width: 100vw;     */
      height: 100vh;
 } 
 
@@ -243,7 +243,7 @@ body{
      }
 }
 
-@media screen and (max-width:1115px){
+@media screen and (max-width:974px){
      html{
           font-size: 45%;
      }
