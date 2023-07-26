@@ -121,9 +121,9 @@ body{
      color: var(--blanc);
 }
 
+
 .accueil .txt{
      display: flex;
-     /* position: relative; */
      width: 100vw;
      justify-content: center;
      padding: 4.8rem;
@@ -209,12 +209,13 @@ body{
 
 .galleries .container .item img{
      border-radius: .5rem;
-     border: 3px solid var(--vert);
+     border: 3px solid #444;
 }
 
 .galleries .container .item .descri{
      position: absolute;
-     top: 100%;
+     top: 0;
+     border: 3px solid var(--vert);
      background: #1312129c;
      backdrop-filter: blur(8px);
      width: 300px;
@@ -226,19 +227,23 @@ body{
      flex-direction: column;
      gap: 2rem;
      padding: 1%;
+     opacity: 0;
+     border-radius: .5rem;
      /* z-index: -1; */
 }
 
 
 
 .galleries .container .item:hover .descri{
-     top: 0;
+     opacity: 1;
      /* z-index: 1; */
 }
 
 
 .galleries .container .item .descri h3{
      font-size: 2.1rem;
+     font-family: 'monoton';
+     letter-spacing: .5rem;
 }
 
 .galleries .container .item .descri p{
