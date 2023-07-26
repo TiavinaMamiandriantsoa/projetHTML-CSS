@@ -13,6 +13,11 @@
      src: url(../font/Montserrat/Montserrat-VariableFont_wght.ttf);
  }
  
+ @font-face {
+     font-family: 'nunito';
+     src: url(../font/Nunito/Nunito-VariableFont_wght.ttf);
+ }
+
 :root{
      --vert:#247531de;
      --blanc:#e0ddddc9;
@@ -248,29 +253,39 @@ body{
 
 .galleries .container .item .descri p{
      font-size: 1.8rem;
+     font-family: 'monserat';
 }
 
 .galleries .container .item:hover{
      cursor: pointer;
 }
 
-.service .box-service{
+.box-service{
      display: flex;
-     width: 100vw;
-     justify-content: center;
-     align-items: center;
-     gap: 3rem;
+     justify-content: space-evenly;
+     padding: 3rem;
 }
 
-.service{
-     height: 700px;
+.box-service .box{
+     width:min-content;  
 }
 
-.service .box-service{
-     display: flex;
-     flex-wrap: wrap;
-     
+.box-service .box img{
+     border-radius: 100%;
+     padding: 1.1rem;
+     box-shadow: 0 0 1rem 0#44444463;
 }
+
+.box-service .box p{
+     font-size: 1.9rem;
+     text-align: center;
+     color: var(--blanc);
+     font-family: 'nunito';
+     font-weight: bold;
+     padding: 1.2rem;
+}
+
+
 
 
 
