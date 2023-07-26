@@ -254,7 +254,23 @@ body{
      cursor: pointer;
 }
 
+.service .box-service{
+     display: flex;
+     width: 100vw;
+     justify-content: center;
+     align-items: center;
+     gap: 3rem;
+}
 
+.service{
+     height: 700px;
+}
+
+.service .box-service{
+     display: flex;
+     flex-wrap: wrap;
+     
+}
 
 
 
